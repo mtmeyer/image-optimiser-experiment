@@ -4,3 +4,8 @@
 
 - Doesn't support webp
 - Api doesn't seem as flexible
+
+## Go
+
+- Seems to be a bit more manual
+- Uses same library as sharp

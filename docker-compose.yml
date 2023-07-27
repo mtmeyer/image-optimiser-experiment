@@ -1,0 +1,35 @@
+version : "3"
+
+services:
+  sharp:
+    build:
+      dockerfile: Dockerfile
+      context: ./sharp
+    environment:
+      PORT: 3010
+    ports:
+      - "3010:3010"
+    expose:
+      - "3010"
+
+  jimp:
+    build:
+      dockerfile: Dockerfile
+      context: ./jimp
+    environment:
+      PORT: 3020
+    ports:
+      - "3020:3020"
+    expose:
+      - "3020"
+
+  bimg:
+    build:
+      dockerfile: Dockerfile
+      context: ./go-bimg
+    environment:
+      PORT: 3030
+    ports:
+      - "3030:3030"
+    expose:
+      - "3030"
